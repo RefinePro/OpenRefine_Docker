@@ -15,6 +15,7 @@ Custom docker image to run [OpenRefine](https://openrefine.org/) v3.4.1. This co
 * Build the container: `docker build . -t docker-openrefine:1.0`
 * Run the container: `docker run --network host docker-openrefine:1.0`
     * You can define a volume to persist the OpenRefine Workspace with: `docker run --network host -v /home/USER/docker-openrefine/data:/or/data docker-openrefine:1.0`
+    * For Mac and Windows network mode `--network host` is not supported. Run with `docker run -p 3333:3333 docker-openrefine:1.0`
 * Open http://127.0.0.1:3333 in your browser
 * Stop the container with `ctrl + c` in the terminal that is running `docker run...`
 

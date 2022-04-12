@@ -10,4 +10,4 @@ services:
       - ./data:/or/data
       - ./workspace-files:/or/files
     ports:
-      - 3333:3333
+      - "3333:3333"
