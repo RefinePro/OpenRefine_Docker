@@ -49,51 +49,11 @@ During the `docker build ...` command you can set the following arguments to dis
 
 ## Extension details and configuration
 
-### RDF extension
-
-#### Source Code: 
-
-* [Public Repository on Github](https://github.com/stkenny/grefine-rdf-extension)
-
-#### Version compiled in this docker image:
-
-* Compilation date: 2021-01-29
-* Compiled by: RefinePro
-* Version 1.3.1 - non-official including [PR #58 Remove absolute URL for `command/core/load-language` request](https://github.com/stkenny/grefine-rdf-extension/pull/58)
-
-#### Update Docker
-
-When new development are made on the public repository:
-
-* Pull the changes and resolve potential conflicts introduced by the new version.
-* Compile and update the docker image with the compiled files in `or-configuration/extensions/rdf-extension`
-* Update README.md with new version details
-
-### NER extension
-
-#### Source Code: 
-
-* [Public Repository on Github](https://github.com/stkenny/Refine-NER-Extension)
-
-#### Version compiled in this docker image:
-
-* Compilation date: 2021-01-24
-* Compiled by: stkenny
-* [Version 1.6.1](https://github.com/stkenny/Refine-NER-Extension/releases/tag/v1.6.1)
-
-#### Update Docker
-
-When new development are made on the public repository:
-
-* Pull the changes and resolve potential conflicts introduced by the new version.
-* Compile and update the docker image with the compiled files in `or-configuration/extensions/ner`
-* Update README.md with new version details
-
 ### Workspace File extension
 
 #### Source Code: 
 
-* [Private Repository on RefinePro BitBucket](https://bitbucket.org/refinepro_team/openrefine-local-file-extension)
+* [RefinePro/OpenRefine_local_file_extension](https://github.com/RefinePro/OpenRefine_local_file_extension)
 
 #### Version compiled in this docker image:
 
