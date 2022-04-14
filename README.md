@@ -4,10 +4,7 @@ Custom docker image to run [OpenRefine](https://openrefine.org/) v3.4.1. This co
 
 * `Dockerfile`: build image `docker-openrefine:1.0` (Needs access to DockerHub and https://github.com/OpenRefine/OpenRefine/releases/download)
 * `docker-compose.yml`: start, stop and easy configuration for docker image `docker-openrefine:1.0`
-* `or-configuration`: folder with OpenRefine default configuration and the following extensions (see below for details):
-    * RDF Extension
-    * NER Extension 
-    * Workspace File Extension
+* `or-configuration`: folder with OpenRefine default configuration and the Workspace File Extension
 
 
 ## Running with docker
@@ -21,7 +18,9 @@ Custom docker image to run [OpenRefine](https://openrefine.org/) v3.4.1. This co
 
 ### Enable/Disable create project options
 
-During the `docker build ...` command you can set the following arguments to disable any menus from the `Create Project` page. By default, all options are enabled.
+During the `docker build ...` command you can set the following arguments to disable any menus from the `Create Project` page. This option let system adminstrator control how user can import data into the OpenRefine instance (for example limiting import to only what is available on the OpenRefine instance using `This Computer`).
+
+By default, all options are enabled. 
 
 * **This Computer:** `docker build --build-arg THIS_COMPUTER=false`
 * **Web Addresses (URLs):** `docker build --build-arg WEB_ADDRESSES=false`
