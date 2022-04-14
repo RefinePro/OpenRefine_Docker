@@ -18,7 +18,7 @@ Custom docker image to run [OpenRefine](https://openrefine.org/) v3.4.1. This co
 
 ### Enable/Disable create project options
 
-During the `docker build ...` command you can set the following arguments to disable any menus from the `Create Project` page. This option let system adminstrator control how user can import data into the OpenRefine instance (for example limiting import to only what is available on the OpenRefine instance using `This Computer`).
+During the `docker build ...` command, you can set the following arguments to disable any menus from the `Create Project` page. This option lets the system administrators control how users can import data into the OpenRefine instance. For example, you can limit import to only what is available on the OpenRefine instance using `Workspace Data`)
 
 By default, all options are enabled. 
 
